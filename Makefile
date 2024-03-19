@@ -1,7 +1,8 @@
 install:
 	pip install --upgrade pip &&\
 		pip install -r requirement.txt &&\
-			pip install pytest
+			pip install pytest &&\
+				pip install pytest-cov
 format:
 	black *.py
 
