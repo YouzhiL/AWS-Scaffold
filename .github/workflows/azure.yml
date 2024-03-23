@@ -2,7 +2,7 @@
 
 # GitHub Actions Workflow YAML
 
-name: Python application test with Github Actions
+name: Github Actions testing Azure-python-app
 on: [push]
 
 jobs:
@@ -26,6 +26,4 @@ jobs:
     - name: Test with Pytest
       run: |
         make test
-    - name: Format code with Python black
-      run: |
-        make format
+ 
