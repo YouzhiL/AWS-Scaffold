@@ -3,6 +3,12 @@ install:
 		pip install -r requirement.txt &&\
 			pip install pytest &&\
 				pip install pytest-cov
+install-azure:
+	pip install --upgrade pip &&\
+		pip install -r requirement-azure.txt &&\
+			pip install pytest &&\
+				pip install pytest-cov
+	
 format:
 	black *.py
 
